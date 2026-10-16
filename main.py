@@ -76,19 +76,19 @@ def main():
         if choice=="1":
             semester=cost_per_semester(annual_cost)
             print(f"One semester costs ${semester:,.2f}")
-        if choice=="2":
+        elif choice=="2":
             month=cost_per_month(annual_cost)
             print(f"One month costs ${month:,.2f}")
-        if choice=="3":
+        elif choice=="3":
             day=cost_per_day(annual_cost)
             print(f"One day costs ${day:,.2f}")
-        if choice=="4":
+        elif choice=="4":
             credit=cost_per_credit(annual_cost, credits)
             print(f"One credit costs ${credit:,.2f}")
-        if choice=="5":
+        elif choice=="5":
             CS1430_class=cost_per_class(annual_cost, credits)
             print(f"One CS1430 class costs ${CS1430_class:,.2f}")
-        if choice=="6":
+        elif choice=="6":
             ps5=cost_per_ps5(annual_cost)
             if ps5>=2 or ps5<1:
                 print("You could buy", int(ps5//1), "PS5s")
