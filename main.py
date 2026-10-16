@@ -71,7 +71,7 @@ def main():
         # Show your menu here.
         for i in range (1,7):
             print(str(i)+":", cost(i))
-        print("Q")
+        print("Press Q to quit")
         choice = input("Choose an option: ")
         if choice=="1":
             semester=cost_per_semester(annual_cost)
